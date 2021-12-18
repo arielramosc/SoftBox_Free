@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const conectarBD = async() => {
 
     return await mongoose.
-    connect (process.env.DATABASE_URL)
+    connect ("mongodb+srv://admin:UdeaCiclo4@cluster0.ycv0k.mongodb.net/SoftBox?retryWrites=true&w=majority")
     .then(()=> {
         console.log("Conexion Exitosa");
     })
